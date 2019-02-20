@@ -1,0 +1,161 @@
+/* id starts with #,
+ tag starts without #,
+ s starts with period .*/
+
+/* This is needed in order to make script hiding the opened nmavbar when clicked outside of the menu.*/
+ html, body {
+    width: 100%;
+    height: 100%;
+ }
+
+.navbar-brand {
+	color: #1d304f;
+}
+
+.text-align-center {
+
+}
+
+#slogan {
+    float: none;
+    display: flow-root;
+    text-align: center;
+    display:block;
+    color:#1d304f;
+}
+
+#saveCancelBtns {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-left:0px;
+}
+
+#cancelBtn {
+    margin-left: 80px
+}
+
+/* Place buton in the center of the image.
+Source: https://www.w3schools.com/howto/howto_css_button_on_image.asp*/
+.thumbnail .editImageBtn {
+    display:none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #337ab7;
+    color: white;
+    font-size: 32px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.nav>li.log-in-button {
+	text-align: right;
+	margin-right: 15px;
+}
+
+#signUpLinkWhenCollapsed {
+	text-align: right;
+	margin-right: 5px
+}
+
+.jumbotron {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.jumbotron>p, .jumbotron>h1, .jumbotron>h4 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 0px; /*Rewuires 0px in order to center the text "Latest News!"*/
+    text-align: center;
+    color: #1d304f;
+}
+
+#googleMap {
+	width: 100%;
+	height: 400px
+}
+
+.centered-in-container {
+    text-align: right;
+}
+
+/**/
+.form-control {
+    max-width: 400px
+}
+
+.form-group {
+    margin-right: 0px
+}
+
+/* Source: https://stackoverflow.com/questions/23333231/bootstrap-button-shows-blue-outline-when-clicked*/
+.btn:focus,.btn:active {
+   outline: none !important;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #1d304f;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 15px
+}
+
+/*Navigation Bar behaviour begin ***************************/
+@media (min-width: 768px){
+	.navbar-nav>li>a {
+    	padding-right: 10px;
+    	padding-left: 10px;
+	}
+	.container {
+    	width: 768px;
+	}
+}
+
+@media (min-width: 950px){
+	.navbar-nav>li>a {
+    	padding-right: 10px;
+    	padding-left: 10px;
+	}
+	.container {
+    	width: 950px;
+	}
+}
+
+@media (min-width: 1200px){
+	.container {
+    	width: 1200px;
+	}
+}
+
+.box {
+	height: 230px;
+	width:100%;
+	background-color: #eee;
+    overflow: hidden;
+}
+/*Navigation Bar behaviour end ******************************/
+
+@media (max-width: 768px){
+    .centered-in-container {
+        text-align: center;
+    }
+    .thumbnail {
+        width: fit-content;
+        height: fit-content;
+        margin: 0 auto;
+    }
+    .thumbnail>img {
+        max-height: 250px;
+    }
+    .col-xs-12-centre {
+    max-width: 440px;
+    margin: 0 auto;
+    float: none;
+}
+}
+

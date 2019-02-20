@@ -1,0 +1,123 @@
+/* id starts with #,
+ tag starts without #,
+ class starts with period .*/
+.navbar-brand {
+	color: #1d304f;
+}
+
+#slogan {
+    float: none;
+    display: flow-root;
+    text-align: center;
+    display:block;
+    color:#1d304f;
+}
+
+#signUpLinkWhenCollapsed {
+	text-align: right;
+	margin-right: 5px
+}
+
+.jumbotron {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.jumbotron>p, .jumbotron>h1, .jumbotron>h4 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 0px; /*Rewuires 0px in order to center the text "Latest News!"*/
+    text-align: center;
+    color: #1d304f;
+}
+
+#googleMap {
+	width: 100%;
+	height: 400px
+}
+
+
+
+/* Source: https://stackoverflow.com/questions/23333231/bootstrap-button-shows-blue-outline-when-clicked*/
+.btn:focus,.btn:active {
+   outline: none !important;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #1d304f;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 15px
+}
+
+/*  News feed begin ****************************************
+    Multiple sources:
+    https://codepen.io/jonathansampson/pen/rqemL
+    https://www.quackit.com/css/codes/marquees/
+    */
+.marquee {
+    width: 80%;
+    margin: 0 auto;
+    white-space: normal;
+    overflow: hidden;
+    box-sizing: border-box;
+    animation: marquee 14s linear infinite;
+}
+
+.marquee:hover {
+    animation-play-state: paused
+}
+
+/* Make it move */
+@keyframes marquee {
+    0%   { transform: translate(0, 80%); }
+    100% { transform: translate(0, -100%); }
+}
+
+/*  News feed end ******************************************/
+
+
+/*Navigation Bar behaviour begin ***************************/
+/* Source: https://getbootstrap.com/docs/4.2/layout/overview/*/
+@media (min-width: 768px){
+	.navbar-nav>li>a {
+    	padding-right: 10px;
+    	padding-left: 10px;
+	}
+	.container {
+    	width: 768px;
+	}
+}
+
+@media (max-width: 768px){
+    .nav>li.log-in-button {
+        text-align: right;
+        margin-right: 15px;
+    }
+}
+
+@media (min-width: 950px){
+	.navbar-nav>li>a {
+    	padding-right: 10px;
+    	padding-left: 10px;
+	}
+	.container {
+    	width: 950px;
+	}
+}
+
+@media (min-width: 1200px){
+	.container {
+    	width: 1200px;
+	}
+}
+
+.box {
+	height: 230px;
+	width:100%;
+	background-color: #eee;
+    overflow: hidden;
+}
+
+/*Navigation Bar behaviour end ******************************/
